@@ -21,6 +21,7 @@ class RequestNew extends Component{
 
   onSubmit = async (event) => {
     event.preventDefault();
+    console.log('on submit')
 
     this.setState({loading:true, errorMessage:''});
     const campaign = Campaign(this.props.address);
