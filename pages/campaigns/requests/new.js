@@ -32,7 +32,7 @@ class RequestNew extends Component{
         from: accounts[0]
       });
 
-      Router.replaceRoute(`/campaigns/${this.props.address}`);
+      Router.pushRoute(`/campaigns/${this.props.address}/requests`);
     } catch (err) {
       this.setState({errorMessage:err.message});
     }
